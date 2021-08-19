@@ -1,5 +1,6 @@
 package br.lipsoft.cityapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +14,7 @@ import javax.persistence.Table;
 @NoArgsConstructor @AllArgsConstructor @Data
 @Entity(name = "Country")
 @Table(name = "Pais")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Country {
 
     @Id
