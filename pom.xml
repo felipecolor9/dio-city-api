@@ -41,7 +41,14 @@
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
         </dependency>
-    </dependencies>
+		<!-- https://mvnrepository.com/artifact/com.vladmihalcea/hibernate-types-52 -->
+		<dependency>
+			<groupId>com.vladmihalcea</groupId>
+			<artifactId>hibernate-types-52</artifactId>
+			<version>2.12.1</version>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<plugins>
